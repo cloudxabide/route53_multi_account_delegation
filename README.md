@@ -6,6 +6,22 @@ This is a work in progress.
 I'll be adding some images and more explanation, but this should get the point across to someone who has already been in this situation.
 
 ## Issue
+I plan to test some different methods to deploy containers.  (Red Hat OpenShift Container Platform, AWS EKS, Roll my own using Graviton).  
+
+### Issue 1
+OpenShift has some installation dependencies that can be challenging to mitigate (especially if you're just beginning) - namely, the installer wants to manage DNS entries for the cluster your are building 
+
+*  api.(OCP_CLUSTER_NAME).(OCP_DOMAIN_NAME) 
+*  *.apps.(OCP_CLUSTER_NAME).(OCP_DOMAIN_NAME)
+
+### Issue 2
+I want to keep track of the "billing aspect" of each of these initiatives.  Having separate accounts make that much easier.  Also, with separate accounts, I can burn down one entire environment (OpenShift, for example)  and KNOW that I will not impact the other environments (EKS)
+
+###  Issue 3
+My personal account owns my Second Level Domain (clouditoutloud.com), but I will be using my work account(s) to test OpenShift, EKS, etc...
+This particular situation is similar to what an enterprise customer might run in to with different teams having their own AWS accounts (as they should).
+
+### Hypothetical "Business Example"
 Let's say your organization owns a domain, in this case: clouditoutloud.com.  This domain was registered via AWS and is managed in that same AWS account.  
 After some time, the "OCP Developer team" asks the "CORP IT team" for the ability to manage their own frequent DNS updates from their own AWS account - in this particular case, to test OpenShift Container Platform.  
 Then, another team wants to test AWS EKS, you'll repeat the process using the "EKS Developer team" account
