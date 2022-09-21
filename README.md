@@ -48,17 +48,20 @@ install-config.yaml
   * metadata:name: $OCP_CLUSTER_NAME
 
 ## Testing
+Notice that the second-level domain and both of the third-level domains have different NS records
 ```
 workstation:~ cloudxabide$ dig +short NS clouditoutloud.com
 ns-731.awsdns-27.net.
 ns-1673.awsdns-17.co.uk.
 ns-1506.awsdns-60.org.
 ns-499.awsdns-62.com.
+
 workstation:~ cloudxabide$ dig +short NS ocp.clouditoutloud.com
 ns-35.awsdns-04.com.
 ns-661.awsdns-18.net.
 ns-1935.awsdns-49.co.uk.
 ns-1284.awsdns-32.org.
+
 workstation:~ cloudxabide$ dig +short NS eks.clouditoutloud.com
 ns-1226.awsdns-25.org.
 ns-1764.awsdns-28.co.uk.
