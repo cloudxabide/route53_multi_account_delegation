@@ -26,6 +26,8 @@ Let's say your organization owns a domain, in this case: clouditoutloud.com.  Th
 After some time, the "OCP Developer team" asks the "CORP IT team" for the ability to manage their own frequent DNS updates from their own AWS account - in this particular case, to test OpenShift Container Platform.  
 Then, another team wants to test AWS EKS, you'll repeat the process using the "EKS Developer team" account
 
+## Visualization
+![HostedZone-Overview](Images/HostedZone-Overview.png)
 
 ## Steps (high-level)
 * Register domain (clouditoutloud.com)
