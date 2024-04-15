@@ -64,6 +64,10 @@ ns-1262.awsdns-29.org.
 ns-1990.awsdns-56.co.uk.
 ns-269.awsdns-33.com.
 
+$ dig +short *.apps.dever.openshift.clouditoutloud.com
+44.240.72.59
+34.223.187.121
+
 $ dig +short NS doeks.clouditoutloud.com
 ns-1442.awsdns-52.org.
 ns-1942.awsdns-50.co.uk.
